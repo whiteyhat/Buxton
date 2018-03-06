@@ -12,7 +12,10 @@ The user can easiliy create a product and link it to the blockchain. The user
 can track the produt by its data such as serial number, location or type. Also,
  administrators can transfer the ownership or possession to an administrator.
  
-##Use Case
+## Diagrams
+You can find Architectural UML Diagrams [here](). 
+ 
+## Use Case
 A "Wine" company can access the prototype and register ad administrator. Then,
  an adminsitrator can create a product tracking record. When the product is sent 
  from point A to B, the custodianship of the product can be moved too. The 
@@ -22,7 +25,7 @@ A "Wine" company can access the prototype and register ad administrator. Then,
  This can be used by the end-user to track the wine or by the wine company to
   track the wine.
   
-  ##Set up
+## Set up
   
 Once Docker is installed and you've cloned this repo, navigate to the root
 project directory and run:
