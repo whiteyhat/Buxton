@@ -112,25 +112,12 @@ services:
       - VALIDATOR_URL=tcp://validator:4004
       - DB_HOST=rethink
 
-  asset-client:
-    image: supply-asset-client
-    container_name: supply-asset-client
-    build: ./asset_client
+  buxton:
+    image: supply-buxton-client
+    container_name: supply-buxton-client
+    build: ./buxton
     volumes:
-      - ./asset_client/public/:/usr/local/apache2/htdocs/
-    expose:
-      - 80
-    ports:
-      - '8021:80'
-    depends_on:
-      - server
-
-  fish-client:
-    image: supply-fish-client
-    container_name: supply-fish-client
-    build: ./fish_client
-    volumes:
-      - ./fish_client/public/:/usr/local/apache2/htdocs/
+      - ./buxton/public/:/usr/local/apache2/htdocs/
     expose:
       - 80
     ports:

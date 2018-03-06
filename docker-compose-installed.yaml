@@ -72,25 +72,13 @@ services:
       - VALIDATOR_URL=tcp://validator:4004
       - DB_HOST=rethink
 
-  asset-client:
-    image: supply-asset-client-installed
-    container_name: supply-asset-client-installed
-    build:
-      context: .
-      dockerfile: asset_client/Dockerfile-installed
-    expose:
-      - 80
-    ports:
-      - '8021:80'
-    depends_on:
-      - server
 
-  fish-client:
-    image: supply-fish-client-installed
-    container_name: supply-fish-client-installed
+  buxton:
+    image: supply-buxton-client-installed
+    container_name: supply-buxton-client-installed
     build:
       context: .
-      dockerfile: fish_client/Dockerfile-installed
+      dockerfile: buxton/Dockerfile-installed
     expose:
       - 80
     ports:
