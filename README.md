@@ -11,11 +11,14 @@ The user can easiliy create a product and link it to the blockchain. The user
 can track the product by its data such as serial number, location or type. Also,
  administrators can transfer the ownership or possession to an administrator.
  ### User types
- - Administrator
+ - **Administrator**
+## 
  This user types manages the product logistics.
- - Custodian
+ - **Custodian**
+ ## 
  This user has the current possession of the product. It can post updates for the product such as temperature or product status.
- - Owner
+ - **Owner**
+ ## 
  This user owns the product.
 
 ## Requirements
