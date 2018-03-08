@@ -12,13 +12,10 @@ can track the product by its data such as serial number, location or type. Also,
  administrators can transfer the ownership or possession to an administrator.
  ### User types
  - **Administrator**
-## 
  This user types manages the product logistics.
  - **Custodian**
- ## 
  This user has the current possession of the product. It can post updates for the product such as temperature or product status.
  - **Owner**
- ## 
  This user owns the product.
 
 ## Requirements
