@@ -4,13 +4,23 @@
 # Sawtooth Supply Chain
 
 This prototype is a distributed application powered by Hyperledger Sawtooth to track and manage the
-supply chain of 2 products:
-- Smartphones
+supply chain of:
 - Wine
 
 The user can easiliy create a product and link it to the blockchain. The user
-can track the produt by its data such as serial number, location or type. Also,
+can track the product by its data such as serial number, location or type. Also,
  administrators can transfer the ownership or possession to an administrator.
+ ### User types
+ - Administrator
+ This user types manages the product logistics.
+ - Custodian
+ This user has the current possession of the product. It can post updates for the product such as temperature or product status.
+ - Owner
+ This user owns the product.
+
+## Requirements
+- [Docker](https://docs.docker.com/install/)
+- [Docker Composer](https://docs.docker.com/compose/install/)
  
 ## Diagrams
 You can find Architectural UML Diagrams [here](https://github.com/CarlosRoldanx/Buxton/tree/master/UML%20Diagrams). 
